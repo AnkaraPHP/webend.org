@@ -1,0 +1,322 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+body {
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -khtml-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 25px; }
+  .navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0; }
+  .navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .navbar-wrapper .navbar .container {
+    width: auto; }
+    .navbar-wrapper .navbar .container .navbar-toggle {
+      border-color: #ffffff; }
+      .navbar-wrapper .navbar .container .navbar-toggle .icon-bar {
+        background-color: #ffffff; }
+    .navbar-wrapper .navbar .container .nav li {
+      text-align: center; }
+      .navbar-wrapper .navbar .container .nav li a {
+        color: #ffffff;
+        display: inline-block;
+        padding: 20px 10px;
+        font-size: 12px;
+        font-weight: 600;
+        border-top: 2px solid transparent; }
+        .navbar-wrapper .navbar .container .nav li a:hover {
+          text-decoration: none;
+          color: #55EFCB;
+          background-color: transparent;
+          border-color: #55EFCB; }
+
+#main-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$startColor+0,009ec3+100;Blue+3D+%2315 */
+  background: #1AD6FD;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1AD6FD 0%, #3d6db5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1AD6FD 0%, #3d6db5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(-45deg, #1AD6FD 0%, #3d6db5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  #main-header .container [class^=tagline__] {
+    color: #ffffff; }
+  #main-header .container .logo {
+    margin: 15px 0 5px; }
+  #main-header .container .tagline {
+    padding-top: 150px; }
+    #main-header .container .tagline .tagline__title {
+      font-size: 76px;
+      font-weight: 600; }
+    #main-header .container .tagline .tagline__sub-title {
+      letter-spacing: 8px; }
+    #main-header .container .tagline .tagline__description {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      line-height: 30px;
+      margin-top: 30px;
+      letter-spacing: 1px;
+      font-size: 16px; }
+  #main-header .container .countdown-area {
+    margin-top: 50px; }
+    #main-header .container .countdown-area .count {
+      color: #ffffff;
+      width: 75px;
+      display: inline-block;
+      text-align: center; }
+      #main-header .container .countdown-area .count > span {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 26px; }
+  #main-header .container .header-vector {
+    text-align: center;
+    padding-top: 175px; }
+  #main-header .container .scroll-down {
+    text-align: right;
+    margin-top: 30px; }
+    #main-header .container .scroll-down > .glyphicon {
+      color: #ffffff;
+      font-size: 36px; }
+
+.section-default {
+  padding: 100px 0; }
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin: 10px 0 50px; }
+  .section-title > span {
+    display: inline-block;
+    color: #FF2D55; }
+  .section-title .main-text {
+    position: relative;
+    z-index: 10; }
+  .section-title .shadow-text {
+    position: absolute;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    opacity: .1;
+    top: -12px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5; }
+
+.text-head {
+  width: 90%;
+  margin: 0 auto; }
+  .text-head p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    color: #282828; }
+
+.text-content {
+  width: 75%;
+  margin: 30px auto 0; }
+  .text-content p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #8e8e8e;
+    line-height: 28px;
+    letter-spacing: 1px; }
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid;
+  line-height: 24px;
+  margin: 15px 0; }
+  .button:hover {
+    text-decoration: none; }
+  .button.button-default {
+    color: #ffffff; }
+  .button.button-blue {
+    color: #3d6db5; }
+    .button.button-blue:hover {
+      color: #ffffff;
+      background-color: #3d6db5; }
+  .button.button-white {
+    color: #ffffff; }
+    .button.button-white:hover {
+      color: #ffffff;
+      background-color: #FF2D55;
+      border-color: #FF2D55; }
+
+#about .social-links {
+  text-align: center;
+  margin-top: 60px; }
+  #about .social-links img {
+    margin: 0 15px; }
+
+#speakers {
+  background-color: #f2eeee; }
+  #speakers .speaker {
+    margin-bottom: 50px;
+    text-align: center; }
+    #speakers .speaker figure {
+      position: relative;
+      display: inline-block; }
+      #speakers .speaker figure img {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 5;
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+      #speakers .speaker figure .figure-border {
+        width: 260px;
+        height: 260px;
+        display: block;
+        background-color: #f6902e;
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+    #speakers .speaker h4 {
+      font-weight: 600; }
+    #speakers .speaker h5 {
+      color: #8e8e8e; }
+
+#register {
+  padding: 50px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$startColor+0,009ec3+100;Blue+3D+%2315 */
+  background: #3d6db5;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #3d6db5 0%, #1AD6FD 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #3d6db5 0%, #1AD6FD 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(-45deg, #3d6db5 0%, #1AD6FD 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  #register .register-text {
+    color: #ffffff; }
+    #register .register-text h2 {
+      text-transform: uppercase; }
+    #register .register-text p {
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 1px; }
+  #register .register-button {
+    margin-top: 25px;
+    text-align: right; }
+
+#main-footer {
+  padding: 30px 0; }
+  #main-footer .f-logoo {
+    margin-top: 5px; }
+  #main-footer ul {
+    margin-top: 15px; }
+    #main-footer ul li a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: #FF2D55;
+      text-transform: uppercase; }
+
+#schedule {
+  background: url("../images/schedule-bg.jpg") 600px 0 no-repeat; }
+  #schedule .schedule-item {
+    margin-bottom: 30px; }
+    #schedule .schedule-item > h4 .s-time {
+      color: #f6902e;
+      display: inline-block;
+      width: 150px; }
+    #schedule .schedule-item > h4 .s-name {
+      color: #282828;
+      display: inline-block; }
+      #schedule .schedule-item > h4 .s-name strong {
+        color: #FF2D55; }
+    #schedule .schedule-item > p {
+      color: #8e8e8e;
+      padding-left: 155px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px; }
+
+#venue .map {
+  width: 100%;
+  height: 400px; }
+#venue .map-address {
+  width: 100%;
+  height: 400px;
+  padding: 90px 0;
+  background-color: #3d6db5;
+  color: #ffffff;
+  text-align: center; }
+  #venue .map-address .separator {
+    display: inline-block;
+    width: 150px;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 30px 0; }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 480px) {
+  #main-footer ul {
+    float: right; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .navbar .nav {
+    background-color: #3d6db5; }
+    .navbar .nav li {
+      border-bottom: 1px solid #ffffff; }
+      .navbar .nav li a {
+        display: block !important; }
+
+  .countdown-area .count {
+    width: 65px !important; }
+
+  #register {
+    text-align: center; }
+    #register .register-button {
+      text-align: center !important; }
+
+  #main-footer {
+    text-align: center; } }
+/* Custom, iPhone Retina */
