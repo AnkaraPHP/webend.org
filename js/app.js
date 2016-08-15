@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 
     // --- COUNTDOWN
-    $('.countdown-area').countdown("2016/10/26 09:30:00", function (event) {
+    $('.countdown-area').countdown("2016/10/08 09:00:00", function (event) {
         $('.count-month').html("<span>"+event.strftime('%m')+"</span>AY");
         $('.count-day').html("<span>"+event.strftime('%n')+"</span>GÜN");
         $('.count-hour').html("<span>"+event.strftime('%H')+"</span>SAAT");
