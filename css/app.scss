@@ -10,6 +10,14 @@ a {
   @include transition(all .2s ease-in-out);
 }
 
+.companies{
+  a{
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
