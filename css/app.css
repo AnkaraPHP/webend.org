@@ -21,10 +21,9 @@ a {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-  
-.companies a:hover{
-  text-decoration: none;
-} 
+
+.companies a:hover {
+  text-decoration: none; }
 
 .navbar-wrapper {
   position: absolute;
@@ -59,15 +58,12 @@ a {
           color: #55EFCB;
           background-color: transparent;
           border-color: #55EFCB; }
-    .navbar-wrapper .navbar .container .nav li a.register-button {
-      border: solid 1px #fff;
-    }
-    .navbar-wrapper .navbar .container .nav li a.register-button:hover {
-      color: #ffffff;
-      background-color: #FF2D55;
-      border-color: #FF2D55;
-    }
-
+        .navbar-wrapper .navbar .container .nav li a.register-button {
+          border: solid 1px #fff; }
+          .navbar-wrapper .navbar .container .nav li a.register-button:hover {
+            color: #ffffff;
+            background-color: #FF2D55;
+            border-color: #FF2D55; }
 
 #main-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$startColor+0,009ec3+100;Blue+3D+%2315 */
@@ -120,19 +116,16 @@ a {
     #main-header .container .scroll-down > .glyphicon {
       color: #ffffff;
       font-size: 36px; }
-  #main-header .more-info{
+  #main-header .more-info {
     color: #fff;
     font-size: small;
     font-weight: lighter;
-    margin-left: 20px;
-  }
-  #main-header .more-info a{
-    color: #fff;
-    text-decoration: underline;
-  }
-  #main-header .more-info a:hover{
-    color: #55EFCB;
-  }
+    margin-left: 20px; }
+    #main-header .more-info a {
+      color: #fff;
+      text-decoration: underline; }
+      #main-header .more-info a:hover {
+        color: #55EFCB; }
 
 .section-default {
   padding: 100px 0; }
@@ -353,3 +346,5 @@ a {
   #main-footer {
     text-align: center; } }
 /* Custom, iPhone Retina */
+
+/*# sourceMappingURL=app.css.map */

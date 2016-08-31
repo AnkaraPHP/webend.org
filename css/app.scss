@@ -55,7 +55,7 @@ a {
           a {
             color: #ffffff;
             display: inline-block;
-            padding: 20px 10px;
+            /*padding: 20px 10px;*/
             font-size: 12px;
             font-weight: 600;
             border-top: 2px solid transparent;
@@ -64,6 +64,14 @@ a {
               color: $color-main-green;
               background-color: transparent;
               border-color: $color-main-green;
+            }
+            &.register-button {
+              border: solid 1px #fff;
+              &:hover {
+                color: #ffffff;
+                background-color: $color-main-red;
+                border-color: $color-main-red;
+              }
             }
           }
         }
@@ -136,6 +144,21 @@ a {
       > .glyphicon {
         color: #ffffff;
         font-size: 36px;
+      }
+    }
+  }
+  .more-info {
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-main-green;
       }
     }
   }
@@ -234,6 +257,17 @@ a {
 
   &.button-white {
     color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-main-red;
+      border-color: $color-main-red;
+    }
+  }
+
+  &.button-pink {
+    color: $color-main-red;
+    border-color: $color-main-red;
 
     &:hover {
       color: #ffffff;
