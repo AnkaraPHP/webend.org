@@ -120,6 +120,19 @@ a {
     #main-header .container .scroll-down > .glyphicon {
       color: #ffffff;
       font-size: 36px; }
+  #main-header .more-info{
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 20px;
+  }
+  #main-header .more-info a{
+    color: #fff;
+    text-decoration: underline;
+  }
+  #main-header .more-info a:hover{
+    color: #55EFCB;
+  }
 
 .section-default {
   padding: 100px 0; }
@@ -191,6 +204,13 @@ a {
   .button.button-white {
     color: #ffffff; }
     .button.button-white:hover {
+      color: #ffffff;
+      background-color: #FF2D55;
+      border-color: #FF2D55; }
+  .button.button-pink {
+    color: #FF2D55;
+    border-color: #FF2D55; }
+    .button.button-pink:hover {
       color: #ffffff;
       background-color: #FF2D55;
       border-color: #FF2D55; }
