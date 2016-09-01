@@ -21,10 +21,9 @@ a {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-  
-.companies a:hover{
-  text-decoration: none;
-} 
+
+.companies a:hover {
+  text-decoration: none; }
 
 .navbar-wrapper {
   position: absolute;
@@ -50,7 +49,7 @@ a {
       .navbar-wrapper .navbar .container .nav li a {
         color: #ffffff;
         display: inline-block;
-        padding: 20px 10px;
+        /*padding: 20px 10px;*/
         font-size: 12px;
         font-weight: 600;
         border-top: 2px solid transparent; }
@@ -59,6 +58,12 @@ a {
           color: #55EFCB;
           background-color: transparent;
           border-color: #55EFCB; }
+        .navbar-wrapper .navbar .container .nav li a.register-button {
+          border: solid 1px #fff; }
+          .navbar-wrapper .navbar .container .nav li a.register-button:hover {
+            color: #ffffff;
+            background-color: #FF2D55;
+            border-color: #FF2D55; }
 
 #main-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$startColor+0,009ec3+100;Blue+3D+%2315 */
@@ -90,18 +95,6 @@ a {
       margin-top: 30px;
       letter-spacing: 1px;
       font-size: 16px; }
-  #main-header .container .countdown-area {
-    margin-top: 50px; }
-    #main-header .container .countdown-area .count {
-      color: #ffffff;
-      width: 75px;
-      display: inline-block;
-      text-align: center; }
-      #main-header .container .countdown-area .count > span {
-        display: block;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        font-size: 26px; }
   #main-header .container .header-vector {
     text-align: center;
     padding-top: 175px; }
@@ -111,6 +104,16 @@ a {
     #main-header .container .scroll-down > .glyphicon {
       color: #ffffff;
       font-size: 36px; }
+  #main-header .more-info {
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 20px; }
+    #main-header .more-info a {
+      color: #fff;
+      text-decoration: underline; }
+      #main-header .more-info a:hover {
+        color: #55EFCB; }
 
 .section-default {
   padding: 100px 0; }
@@ -185,6 +188,13 @@ a {
       color: #ffffff;
       background-color: #FF2D55;
       border-color: #FF2D55; }
+  .button.button-pink {
+    color: #FF2D55;
+    border-color: #FF2D55; }
+    .button.button-pink:hover {
+      color: #ffffff;
+      background-color: #FF2D55;
+      border-color: #FF2D55; }
 
 #about .social-links {
   text-align: center;
@@ -221,7 +231,7 @@ a {
     #speakers .speaker h5 {
       color: #8e8e8e; }
 
-#register {
+.register {
   padding: 50px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$startColor+0,009ec3+100;Blue+3D+%2315 */
   background: #3d6db5;
@@ -234,19 +244,33 @@ a {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
-  #register .register-text {
+  .register .register-text {
     color: #ffffff; }
-    #register .register-text h2 {
+    .register .register-text h2 {
       text-transform: uppercase; }
-    #register .register-text p {
+    .register .register-text p {
       font-family: "Raleway", sans-serif;
       font-weight: 300;
       font-size: 16px;
       line-height: 28px;
       letter-spacing: 1px; }
-  #register .register-button {
+  .register .register-button {
     margin-top: 25px;
     text-align: right; }
+  .register .countdown-area {
+    /*margin-top: 50px;*/
+    border: 1px solid white;
+    width: 400px; }
+    .register .countdown-area .count {
+      color: #ffffff;
+      width: 75px;
+      display: inline-block;
+      text-align: center; }
+      .register .countdown-area .count > span {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 26px; }
 
 #main-footer {
   padding: 30px 0; }
@@ -324,3 +348,5 @@ a {
   #main-footer {
     text-align: center; } }
 /* Custom, iPhone Retina */
+
+/*# sourceMappingURL=app.css.map */
