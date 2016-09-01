@@ -55,7 +55,7 @@ a {
           a {
             color: #ffffff;
             display: inline-block;
-            padding: 20px 10px;
+            /*padding: 20px 10px;*/
             font-size: 12px;
             font-weight: 600;
             border-top: 2px solid transparent;
@@ -64,6 +64,14 @@ a {
               color: $color-main-green;
               background-color: transparent;
               border-color: $color-main-green;
+            }
+            &.register-button {
+              border: solid 1px #fff;
+              &:hover {
+                color: #ffffff;
+                background-color: $color-main-red;
+                border-color: $color-main-red;
+              }
             }
           }
         }
@@ -106,24 +114,6 @@ a {
       }
     }
 
-    .countdown-area {
-      margin-top: 50px;
-
-      .count {
-        color: #ffffff;
-        width: 75px;
-        display: inline-block;
-        text-align: center;
-
-        > span {
-          display: block;
-          font-family: $montserrat;
-          font-weight: 600;
-          font-size: 26px;
-        }
-      }
-    }
-
     .header-vector {
       text-align: center;
       padding-top: 175px;
@@ -136,6 +126,21 @@ a {
       > .glyphicon {
         color: #ffffff;
         font-size: 36px;
+      }
+    }
+  }
+  .more-info {
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-main-green;
       }
     }
   }
@@ -241,6 +246,17 @@ a {
       border-color: $color-main-red;
     }
   }
+
+  &.button-pink {
+    color: $color-main-red;
+    border-color: $color-main-red;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-main-red;
+      border-color: $color-main-red;
+    }
+  }
 }
 
 #about {
@@ -293,7 +309,7 @@ a {
   }
 }
 
-#register {
+.register {
   padding: 50px 0;
   @include background-diagonal($color-main-blue, $color-main-aqua);
 
@@ -316,6 +332,26 @@ a {
   .register-button {
     margin-top: 25px;
     text-align: right;
+  }
+
+  .countdown-area {
+    /*margin-top: 50px;*/
+    border: 1px solid white;
+    width: 400px;
+
+    .count {
+      color: #ffffff;
+      width: 75px;
+      display: inline-block;
+      text-align: center;
+
+      > span {
+        display: block;
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 26px;
+      }
+    }
   }
 }
 
