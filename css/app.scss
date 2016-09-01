@@ -114,24 +114,6 @@ a {
       }
     }
 
-    .countdown-area {
-      margin-top: 50px;
-
-      .count {
-        color: #ffffff;
-        width: 75px;
-        display: inline-block;
-        text-align: center;
-
-        > span {
-          display: block;
-          font-family: $montserrat;
-          font-weight: 600;
-          font-size: 26px;
-        }
-      }
-    }
-
     .header-vector {
       text-align: center;
       padding-top: 175px;
@@ -327,7 +309,7 @@ a {
   }
 }
 
-#register {
+.register {
   padding: 50px 0;
   @include background-diagonal($color-main-blue, $color-main-aqua);
 
@@ -350,6 +332,26 @@ a {
   .register-button {
     margin-top: 25px;
     text-align: right;
+  }
+
+  .countdown-area {
+    /*margin-top: 50px;*/
+    border: 1px solid white;
+    width: 400px;
+
+    .count {
+      color: #ffffff;
+      width: 75px;
+      display: inline-block;
+      text-align: center;
+
+      > span {
+        display: block;
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 26px;
+      }
+    }
   }
 }
 
