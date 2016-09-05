@@ -1,8 +1,14 @@
 $(document).ready(function(){
 
     // --- HEADER
-    var WH = $(window).height();
-    $('#main-header').height(WH);
+    // get header's content height to define min-height
+    var lastHeaderElement = document.getElementsByClassName("scroll-down")[0];
+    var lastHeaderElementPosition = lastHeaderElement.getBoundingClientRect();
+    var minHeight = lastHeaderElementPosition.bottom + 20;
+    var windowHeight = $(window).height();
+    var newHeight = windowHeight;
+    if(windowHeight<minHeight) newHeight = minHeight;
+    $('#main-header').height(newHeight);
 
 
     // --- COUNTDOWN
