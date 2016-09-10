@@ -34,8 +34,8 @@ $(document).ready(function(){
         zoom: 17,
         maptype: 'ROADMAP',
         markers: [{
-            latitude: 39.892378,
-            longitude: 32.783437,
+            latitude: 39.893420,
+            longitude: 32.785750,
             title: 'Webend'
         }]
     });
